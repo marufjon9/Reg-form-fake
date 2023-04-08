@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <title>Registration Form</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="form_box">
+                <form
+                    action="https://echo.htmlacademy.ru/"
+                    method="post"
+                    class="info_form"
+                >
+                    <div class="form__wrapper">
+                        <h1 class="info_heading">Account settings</h1>
+                        <button class="btn_reset" type="reset"></button>
+                    </div>
+
+                    <div class="info__wrapper">
+                        <img
+                            class="avatar__img"
+                            src="./images/user-logo.jpg"
+                            width="100"
+                            height="100"
+                            alt="user img"
+                        />
+                        <label class="user__name-label" for="username"
+                            >USERNAME</label
+                        >
+                        <input
+                            class="user__name"
+                            type="text"
+                            id="username"
+                            name="user__name"
+                            placeholder="Enter your username"
+                            required
+                        />
+                        <div class="fullname__wrapper">
+                            <div class="wrapper__f-username">
+                                <label class="user__name-label" for="first-name"
+                                    >FIRST NAME</label
+                                >
+                                <input
+                                    class="user__name f__name"
+                                    type="text"
+                                    id="first-name"
+                                    name="user__name__first"
+                                    placeholder="Enter your first name"
+                                    required
+                                />
+                            </div>
+                            <div class="wrapper__l-username">
+                                <label class="user__name-label" for="last-name"
+                                    >LAST NAME</label
+                                >
+                                <input
+                                    class="user__name f__name"
+                                    type="text"
+                                    id="last-name"
+                                    name="user__name__last"
+                                    placeholder="Enter your last name"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <label class="user__name-label" for="email"
+                            >EMAIL</label
+                        >
+                        <input
+                            class="user__name"
+                            type="email"
+                            name="user__name__email"
+                            placeholder="Enter your email"
+                            id="email"
+                            required
+                        />
+                        <label class="user__name-label" for="bio">BIO</label>
+                        <textarea
+                            class="user__name"
+                            name="user__name__bio"
+                            id="bio"
+                            placeholder="Tell us about  yourself"
+                            rows="4"
+                        ></textarea>
+                    </div>
+
+                    <div class="wrapper__links">
+                        <button class="btn_cancel" type="button">Cancel</button>
+                        <button class="btn_submit" type="submit">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-weight: 400;
+    src: url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"),
+        url("../fonts/open-sans-v34-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-weight: 700;
+    src: url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"),
+        url("../fonts/open-sans-v34-latin-700.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: "Open Sans";
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.form_box {
+    width: 600px;
+    margin-top: 70px;
+    background-color: yellow;
+    padding: 50px;
+}
+
+.form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_reset {
+    background-image: url("../images/x-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
+.info__wrapper {
+    position: relative;
+    margin-top: 100px;
+    width: 600px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    padding: 80px 20px 30px 20px;
+}
+.avatar__img {
+    position: absolute;
+    top: -65px;
+    border-radius: 50%;
+}
+.user__name-label {
+    color: #000;
+    opacity: 0.5;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+::placeholder {
+    color: #000;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.user__name {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    border-bottom: 1px solid #bebbbb;
+    resize: vertical;
+}
+.fullname__wrapper {
+    display: flex;
+    border-bottom: 1px solid #bebbbb;
+    margin-bottom: 10px;
+}
+.wrapper__f-username {
+    margin-right: 100px;
+}
+.f__name {
+    border: none;
+}
+
+.wrapper__links {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_cancel {
+    border: none;
+    background-color: transparent;
+    color: #292929;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.btn_submit {
+    border: none;
+    background-color: transparent;
+    color: #292929;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 30px;
+}
